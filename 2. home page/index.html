@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- google font poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- line awesome icon -->
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+
+    <!-- font awesome icon -->
+    <script src="https://kit.fontawesome.com/20d6bc66e0.js" crossorigin="anonymous"></script>
+
+    <!-- add custom css link -->
+    <link rel="stylesheet" href="./style.css">
+
+    <title>home page</title>
+</head>
+
+<body>
+
+
+    <!-- home page design -->
+
+    <section class="section">
+
+        <div class="slider">
+            <div class="image">
+                <a href="#">
+                    <img src="./image/slider-image/CD-1686x548-copy.webp" alt="">
+                </a>
+            </div>
+            <div class="search-box">
+                <div class="search-card">
+                    <h1>Find your right car</h1>
+                    <div class="search-button">
+                        <a (click)="onShowBrand()" value="brand" class="btn">New Car</a>
+                        <a (click)="onShowModel()" class="btn">Used Car</a>
+                    </div>
+                </div>
+
+                <!-- select cars one -->
+                <div class="select-cars">
+
+                    <div class="radio-button">
+                        <div class="radio-input">
+                            <input type="radio" class="radio" id="By_Budget" name="fav_language" value="1">
+                            <label class="radio-button-name" for="By_Budget">By Budget</label>
+                        </div>
+                        <div class="radio-input">
+                            <input type="radio" class="radio" id="By_Brand" name="fav_language" value="2">
+                            <label class="radio-button-name" for="By_Brand">By Brand</label>
+                        </div>
+                    </div>
+
+                    <div class="selectArea">
+                        <div class="block">
+                            <select class="select-item" name="gender" value="Select Budget">
+                                <option value="Select Budget" selected disabled>Select Budget</option>
+                                <option value="one">1 - 5 Lakh</option>
+                                <option value="two">5 - 10 Lakh</option>
+                                <option value="three">10 - 15 Lakh</option>
+                                <option value="four">15 - 20 Lakh</option>
+                                <option value="five">20 - 25 Lakh</option>
+                                <option value="six">25 - 30 Lakh</option>
+                            </select>
+                        </div>
+
+                        <div class="block">
+                            <select class="select-item" name="gender" value="Select Budget">
+                                <option value="All Vehicle Type" selected disabled>All Vehicle Type</option>
+                                <option value="one">Sedan</option>
+                                <option value="two">SUV</option>
+                                <option value="three">MUV</option>
+                                <option value="four">Luxury</option>
+                                <option value="five">Super Luxury</option>
+                                <option value="six">Hybrid</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="select_and_search_btn">
+                        <a class="select-search" href="#">Search</a>
+                    </div>
+                    <div class="advanced-search">
+                        <a href="#">Advanced Search <i class="las la-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- select cars-2. use for conditional. This is use for use car button. -->
+
+                <!-- <div class="select-cars">
+
+                    <div class="radio-button">
+                        <div class="radio-input">
+                            <input type="radio" class="radio" id="By_Budget" name="fav_language" value="1">
+                            <label class="radio-button-name" for="By_Budget">By Budget</label>
+                        </div>
+                        <div class="radio-input">
+                            <input type="radio" class="radio" id="By_Brand" name="fav_language" value="2">
+                            <label class="radio-button-name" for="By_Brand">By Model</label>
+                        </div>
+                    </div>
+
+
+                    <div class="selectArea">
+                        <div class="block">
+                            <select class="select-item" name="gender" value="Select Budget">
+                                <option value="Select Budget" selected disabled>Select Budget</option>
+                                <option value="one">1 - 5 Lakh</option>
+                                <option value="two">5 - 10 Lakh</option>
+                                <option value="three">10 - 15 Lakh</option>
+                                <option value="four">15 - 20 Lakh</option>
+                                <option value="five">20 - 25 Lakh</option>
+                                <option value="six">25 - 30 Lakh</option>
+                            </select>
+                        </div>
+
+
+                        <div class="block">
+                            <select class="select-item" name="gender" value="Select Budget">
+                                <option value="Select City" selected disabled>Select City</option>
+                                <option value="one">Ahmedabad</option>
+                                <option value="two">South Chennai</option>
+                                <option value="three">North Chennai</option>
+                                <option value="four">Nodia</option>
+                                <option value="five">Faridabad</option>
+                                <option value="six">Modinagar</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="select_and_search_btn">
+                        <a class="select-search" href="#">Search</a>
+                    </div>
+                    <div class="advanced-search">
+                        <a href="#">Advanced Search <i class="las la-arrow-right"></i></a>
+                    </div>
+                </div> -->
+
+
+
+
+
+            </div>
+        </div>
+
+        <!-- Recommended Cars start  -->
+        <div class="section-one-child">
+            <div class="car-cards">
+                <h1>Recommended Cars For You</h1>
+
+                <div class="cards">
+
+                    <!-- card one -->
+                    <div class="card">
+                        <div class="card-image">
+                            <a href="#">
+                                <img src="./image/cars-card/front-left-side-47 (1).jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="card-details">
+                            <h3><a href="#">Maruti Alto 800</a></h3>
+                            <h4><i class="las la-rupee-sign"></i>3.39 - 5.03 Lakh*</h4>
+                            <div class="card-button">
+                                <a href="#">Check june Offers</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- card two -->
+                    <div class="card">
+                        <div class="card-image">
+                            <a href="#">
+                                <img src="./image/cars-card/front-left-side-47.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="card-details">
+                            <h3><a href="#">Maruti Alto 800 tour</a></h3>
+                            <h4><i class="las la-rupee-sign"></i>3.91 - 3.97 Lakh*</h4>
+                            <div class="card-button">
+                                <a href="#">Check june Offers</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- card three -->
+                    <div class="card">
+                        <div class="card-image">
+                            <a href="#">
+                                <img src="./image/cars-card/front-left-side-47 (2).jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="card-details">
+                            <h3><a href="#">Honda City Hybrid</a></h3>
+                            <h4><i class="las la-rupee-sign"></i>19.50 Lakh*</h4>
+                            <div class="card-button">
+                                <a href="#">Check june Offers</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- card four -->
+                    <div class="card">
+                        <div class="card-image">
+                            <a href="#">
+                                <img src="./image/cars-card/front-left-side-47 (3).jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="card-details">
+                            <h3><a href="#">Hyundai Alcazar</a></h3>
+                            <h4><i class="las la-rupee-sign"></i>16.44 - 20.25 Lakh*</h4>
+                            <div class="card-button">
+                                <a href="#">Check june Offers</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- Recommended Cars end  -->
+
+        <!-- the most searched cars start -->
+        <div class="section-one-child">
+            <div class="car-cards">
+                <h1>The most searched cars</h1>
+                <div class="different-type-cars">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <span>
+                                    Hatchback
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>
+                                    SUV
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>
+                                    MUV
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>
+                                    Luxury
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="cards">
+
+                    <!-- car one -->
+                    <div class="card">
+                        <div class="card-image">
+                            <a href="#">
+                                <img src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Renault/KWID/7897/1647502017122/front-left-side-47.jpg"
+                                    alt="">
+                            </a>
+                        </div>
+                        <div class="card-details">
+                            <h3><a href="#">Renault KWID</a></h3>
+                            <h4><i class="las la-rupee-sign"></i>4.62 - 5.96 Lakh*</h4>
+                            <div class="card-button">
+                                <a href="#">View All Offers</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- car two -->
+                    <div class="card">
+                        <div class="card-image">
+                            <a href="#">
+                                <img src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Maruti/Swift/8378/1644834798148/front-left-side-47.jpg"
+                                    alt="">
+                            </a>
+                        </div>
+                        <div class="card-details">
+                            <h3><a href="#">Maruti Swift</a></h3>
+                            <h4><i class="las la-rupee-sign"></i>5.92 - 8.85 Lakh*</h4>
+                            <div class="card-button">
+                                <a href="#">Check june Offers</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- car three -->
+                    <div class="card">
+                        <div class="card-image">
+                            <a href="#">
+                                <img src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Maruti/Baleno/8674/1645684614616/front-left-side-47.jpg"
+                                    alt="">
+                            </a>
+                        </div>
+                        <div class="card-details">
+                            <h3><a href="#">Maruti Baleno</a></h3>
+                            <h4><i class="las la-rupee-sign"></i>6.49 - 9.71 Lakh*</h4>
+                            <div class="card-button">
+                                <a href="#">Check june Offers</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- car four -->
+                    <div class="card">
+                        <div class="card-image">
+                            <a href="#">
+                                <img src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Hyundai/i20/6986/1604567349336/front-left-side-47.jpg"
+                                    alt="">
+                            </a>
+                        </div>
+                        <div class="card-details">
+                            <h3><a href="#">Hyundai i20</a></h3>
+                            <h4><i class="las la-rupee-sign"></i>7.03 - 11.54 Lakh*</h4>
+                            <div class="card-button">
+                                <a href="#">Check june Offers</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- the most searched cars end -->
+
+
+        <!-- popular brand start  -->
+        <div class="section-one-child">
+            <div class="car-cards">
+                <h1>Popular Brands</h1>
+
+                <div class="popular-brands">
+
+                    <!-- card one -->
+                    <div class="card brand">
+                        <div class="card-image brand-image">
+                            <a href="#">
+                                <img src="https://stimg.cardekho.com/pwa/img/brandLogo_168x84/maruti.jpg" alt="">
+                                <h4>Maruti</h4>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- card two -->
+                    <div class="card brand">
+                        <div class="card-image brand-image">
+                            <a href="#">
+                                <img src="https://stimg.cardekho.com/pwa/img/brandLogo_168x84/maruti.jpg" alt="">
+                                <h4>Maruti</h4>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- card three -->
+                    <div class="card brand">
+                        <div class="card-image brand-image">
+                            <a href="#">
+                                <img src="https://stimg.cardekho.com/pwa/img/brandLogo_168x84/hyundai.jpg" alt="">
+                                <h4>Hyundai</h4>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- card four -->
+                    <div class="card brand">
+                        <div class="card-image brand-image">
+                            <a href="#">
+                                <img src="https://stimg.cardekho.com/pwa/img/brandLogo_168x84/mahindra.jpg" alt="">
+                                <h4>Mahindra</h4>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- card five -->
+                    <div class="card brand">
+                        <div class="card-image brand-image">
+                            <a href="#">
+                                <img src="https://stimg.cardekho.com/pwa/img/brandLogo_168x84/kia.jpg" alt="">
+                                <h4>Kia</h4>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- card six -->
+                    <div class="card brand">
+                        <div class="card-image brand-image">
+                            <a href="#">
+                                <img src="https://stimg.cardekho.com/pwa/img/brandLogo_168x84/mercedes-benz.jpg" alt="">
+                                <h4>Mercedes-Benz</h4>
+                            </a>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="all-brands">
+                    <h5>
+                        <a href="#">View All Brands</a>
+                    </h5>
+                </div>
+            </div>
+        </div>
+        <!-- popular brand end  -->
+
+
+        <!-- upcoming cars start  -->
+        <div class="section-one-child">
+            <div class="car-cards">
+                <h1>Upcoming Cars</h1>
+
+                <div class="cards">
+
+                    <!-- card one -->
+                    <div class="card">
+                        <div class="card-image">
+                            <a href="#">
+                                <img src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Toyota/Land-Cruiser/8448/1623313668941/front-left-side-47.jpg"
+                                    alt="">
+                            </a>
+                        </div>
+                        <div class="card-details">
+                            <h3><a href="#">Toyota Land Cruiser</a></h3>
+                            <h4>
+                                <i class="las la-rupee-sign"></i>
+                                1.50 Cr
+                                <span class="estimated-price">Estimated Price</span>
+                            </h4>
+                            <p class="car-launch-date">
+                                Aug 16, 2022 Expected Launch
+                            </p>
+                            <div class="card-button">
+                                <a href="#">Alert Me When Launched</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- card two -->
+                    <div class="card">
+                        <div class="card-image">
+                            <a href="#">
+                                <img src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Hyundai/Nexo/7255/1580972415014/front-left-side-47.jpg"
+                                    alt="">
+                            </a>
+                        </div>
+                        <div class="card-details">
+                            <h3><a href="#">Hyundai Nexo</a></h3>
+                            <h4>
+                                <i class="las la-rupee-sign"></i>
+                                65.00 Lakh
+                                <span class="estimated-price">Estimated Price</span>
+                            </h4>
+                            <p class="car-launch-date">
+                                Mar 01, 2023 Expected Launch
+                            </p>
+                            <div class="card-button">
+                                <a href="#">Alert Me When Launched</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- card three -->
+                    <div class="card">
+                        <div class="card-image">
+                            <a href="#">
+                                <img src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Citroen/C3/8434/1631795589577/front-left-side-47.jpg"
+                                    alt="">
+                            </a>
+                        </div>
+                        <div class="card-details">
+                            <h3><a href="#">Citroen C3</a></h3>
+                            <h4>
+                                <i class="las la-rupee-sign"></i>
+                                65.00 Lakh
+                                <span class="estimated-price">Estimated Price</span>
+                            </h4>
+                            <p class="car-launch-date">
+                                Aug 01, 2022 Expected Launch
+                            </p>
+                            <div class="card-button">
+                                <a href="#">Alert Me When Launched</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- card four -->
+                    <div class="card">
+                        <div class="card-image">
+                            <a href="#">
+                                <img src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Tesla/Model-X/5253/1611841733029/front-left-side-47.jpg"
+                                    alt="">
+                            </a>
+                        </div>
+                        <div class="card-details">
+                            <h3><a href="#">Tesla Model X</a></h3>
+                            <h4>
+                                <i class="las la-rupee-sign"></i>
+                                2.00 Cr
+                                <span class="estimated-price">Estimated Price</span>
+                            </h4>
+                            <p class="car-launch-date">
+                                Jul 10, 2022 Expected Launch
+                            </p>
+                            <div class="card-button">
+                                <a href="#">Alert Me When Launched</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+        <!-- upcoming cars end  -->
+
+
+        <br><br><br>
+
+    </section>
+
+    <!-- home page design -->
+
+
+</body>
+
+</html>
